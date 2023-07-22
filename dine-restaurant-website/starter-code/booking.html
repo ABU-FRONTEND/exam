@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Dine Website Challenge</title>
+  <link rel="stylesheet" href="./css/booking.css">
+</head>
+<body>
+   <div class="header">
+      <div class="container">
+         <a href="./index.html">
+            <img src="./images/logo.svg" alt="company logo">
+         </a>
+         <div class="promo__section">
+            <div class="section__about">
+               <h3>Reservations</h3>
+               <p class="medium_text white_color">We can’t wait to host you. If you have any special requirements please feel free to call
+                  on
+                  the phone number below.
+                  We’ll be happy to accommodate you.</p>
+                  <button class="btn_white"><a href="#">RESERVE PLACE</a></button>
+            </div>
+            <form id="form" class="form">
+               <div class="name">
+                  <input type="text" id="name" name="name" placeholder="Name" autocomplete="off">
+                  <div class="error"></div>
+               </div>
+               <div class="email">
+                  <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
+                  <div class="error"></div>
+               </div>
+               <div class="dates">
+                  <div class="labels">
+                     <p class="pick_a_date medium_text black_color">Pick a date</p>
+                     <div class="err"></div>
+                  </div>
+                  <div class="dates_select">
+                     <div class="month">
+                        <select name="month" id="month" class="NotArrow">
+                           <option value="0">
+                              MM
+                           </option>
+                        </select>
+                     </div>
+                     <div class="day">
+                        <select name="day" id="day" class="NotArrow">
+                           <option value="0">
+                              DD
+                           </option>
+                        </select>
+                     </div>
+                     <div class="year">
+                        <select name="year" id="year" class="NotArrow">
+                           <option value="0">
+                              YYYY
+                           </option>
+                           <option value="1">
+                              2022
+                           </option>
+                           <option value="2">
+                              2023
+                           </option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               <div class="times">
+                  <p class="medium_text black_color">Pick a time</p>
+                  <div class="times_select">
+                     <div class="hours">
+                        <select name="hours" id="hours" class="NotArrow">
+                           <option value="00">00</option>
+                        </select>
+                     </div>
+                     <div class="minutes">
+                        <select name="minutes" id="minutes" class="NotArrow">
+                           <option value="00">00</option>
+                        </select>
+                     </div>
+                     <div class="time">
+                        <select name="time" id="time" class="time">
+                           <option value="AM">AM</option>
+                           <option value="PM">PM</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               <div class="counter">
+                  <div class="minus">
+                     -
+                  </div>
+                  <div class="people_count black_color">
+                     <span>4</span>
+                     <p>people</p>
+                  </div>
+                  <div class="plus">
+                     +
+                  </div>
+               </div>
+               <button type="submit">MAKE RESERVATION</button>
+            </form>
+         </div>
+      </div>
+   </div>   
+   <footer>
+      <div class="container">
+         <div class="footer_content">
+            <div class="company_name"><a href="./index.html"><img src="./images/logo.svg" alt="company logo svg"></a></div>
+            <div class="location_information white_color">
+               <div class="location">
+                  Marthwaite, Sedbergh <br>
+                  Cumbria <br>
+                  +00 44 123 4567
+               </div>
+               <div class="open_times">
+                  OPEN TIMES <br>
+                  MON - FRI: 09:00 AM - 10:00 PM <br>
+                  SAT - SUN: 09:00 AM - 11:30 PM
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer> 
+   <script src="./js/form.js"></script>
+
+
+</body>
+</html>
